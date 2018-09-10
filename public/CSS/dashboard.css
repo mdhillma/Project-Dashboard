@@ -1,4 +1,4 @@
-<style type="text/css">
+
 .placeholder{background-color: rgb(200,200,225);
   border: 2px solid rgb(50,50,100);
 }
@@ -15,5 +15,8 @@ section .ban {
   font-weight:bold;
 }
 
+#taskTable > tbody tr {}
+tr.current_sprint {border-left:12ox solid #eee}
 
-</style>
+#taskTable > tbody tr {}
+tr.current_sprint {border-left:12ox solid rgb(35,95,163)}
