@@ -15,6 +15,8 @@ section .ban {
   font-weight:bold;
 }
 
+tr.current_sprint{border-left: 12px solid green;}
+
 #taskTable > tbody tr {}
 tr.current_sprint {border-left:12ox solid #eee}
 

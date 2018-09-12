@@ -71,6 +71,11 @@ var dashboardApp = new Vue({
 
     }
   },
+  completeClass: function(){
+    if (task.perc_complete ==100) {return 'alert-success'}
+    if (task.current_sprint && task.hours_worked == 0) {return 'alert-warn'}
+  },
+
   created() {
     this.fetchTasks()
   }
