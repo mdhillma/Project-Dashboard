@@ -56,7 +56,7 @@ var dashboardApp = new Vue({
       })
 
       .catch( function(err) {
-        console.log('FETCH ERROR');
+        console.log('TASK FETCH ERROR');
         console.log(err)
       })
     },
@@ -78,5 +78,15 @@ var dashboardApp = new Vue({
 
   created() {
     this.fetchTasks()
-  }
+  },
+
+  // fetchTasks (){
+  //   fetch(...)
+  //   .then( function successCallback (o){})
+  //   .then()
+  //   .catch( function(err) {
+  //     console.log('TASK FETCH ERROR:');
+  //     console.log(err);
+  //   })
+  // }
 })
