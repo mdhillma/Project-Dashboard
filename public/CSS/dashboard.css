@@ -19,6 +19,7 @@ tr.current_sprint{border-left: 12px solid green;}
 
 #taskTable > tbody tr {}
 tr.current_sprint {border-left:12ox solid #eee}
+cursor: pointer;
 
 #taskTable > tbody tr {}
 tr.current_sprint {border-left:12ox solid rgb(35,95,163)}
