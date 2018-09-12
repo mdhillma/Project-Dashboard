@@ -8,6 +8,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/dashboard.css">
+table-striped tabke-sm table-hover
 
   <style type="text/css">
   .placeholder{background-color: rgb(200,200,225);
@@ -97,7 +98,8 @@
           <tr v-for="task in tasks" v-bind:class="task.current_sprint ? 'current_sprint' : '' "
           :key="task.id"
           :id= " 'task-' + task.id"
-          :class = "task.current_sprint ? 'current-sprint' : '' ">
+          :class = "task.current_sprint ? 'current-sprint' : '' "
+          @click="gotoTask(task.id)">
           <td>{{task.title}}</td>
           <td>{{task.type}} </td>
           <td> {{task.size}}</td>
