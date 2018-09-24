@@ -8,6 +8,6 @@ if ($task <1) {
   throw new Exception('Invalid Task ID');
 }
 
-// 1. Go to the database and get all work associalrd with the $taskId
+// 1. Go to the database and get all work associated with the $taskId
 // 2. Convert to JsonSerializable
-// 3. Print 
+// 3. Print
