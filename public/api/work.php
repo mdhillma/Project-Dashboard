@@ -13,5 +13,11 @@ if ($task <1) {
 }
 
 // 1. Go to the database and get all work associated with the $taskId
+$workArr = Work::getWorkByTaskId($taskId);
+
 // 2. Convert to JsonSerializable
+$json = json_encode($workArr, JSON_PRETTY_PRINT);
+
 // 3. Print
+header('Content-Type: application/json');
+echo $json;
