@@ -1,8 +1,8 @@
 <?php
 
-class Worker
+class Work
 {
-  public $id;
+  public $work_id;
   public $start_date; //'YYYY-MM-DD'
   public $end_date; //'YYYY-MM-DD'
 

@@ -4,6 +4,10 @@ require '../../app/common.php'
 
 $taskId = intval($_GET['taskId'] ?? 0);
 
+$work = Work::findByTaskId($taskId);
+
+echo json_encode($work);
+
 if ($task <1) {
   throw new Exception('Invalid Task ID');
 }
