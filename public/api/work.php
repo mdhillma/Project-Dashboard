@@ -2,6 +2,8 @@
 
 require '../../app/common.php'
 
+if ($_SERVER['REQUEST METHOD'] == 'POST') {}
+
 $taskId = intval($_GET['taskId'] ?? 0);
 
 $work = Work::findByTaskId($taskId);
