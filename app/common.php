@@ -11,3 +11,5 @@ chdir(_DIR_);
 set_include_path (_DIR_);
 
 require 'models/Work.php';
+require 'models/WorkHoursReport.php';
+require 'models/Team.php';
