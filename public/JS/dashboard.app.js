@@ -46,7 +46,7 @@ var dashboardApp = new Vue({
       alert(msg);
     },
     fetchTasks() {
-      fetch('https://raw.githubusercontent.com/tag/iu-msis/dev/public/p1-tasks.json')
+      fetch('https://raw.githubusercontent.com/tag/iu-msis/dev/app/data/p1-tasks.json')
       .then(response => response.json())
       //means same thing as .then(function(response){return response.json()})
       .then( function(json){
